@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     if (argc != 4)
     {
@@ -41,17 +41,7 @@ int main(int argc, char** argv)
             chip8.Cycle();
 
             platform.Update(chip8.video, videoPitch);
-            for (int i = 0; i < VIDEO_HEIGHT; i++)
-            {
-                for (int j = 0; j < VIDEO_WIDTH; j++)
-                {
-                    cout << chip8.video[i * VIDEO_WIDTH + j] << " ";
-                }
-                cout << endl;
-            }
-            getchar();
         }
-    }
 
-    return 0;
-}
+        return 0;
+    }

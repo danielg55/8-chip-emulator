@@ -352,7 +352,6 @@ void Chip8::OP_8xy7()
 void Chip8::OP_8xyE()
 {
 	uint8_t Vx = (opcode & 0x0F00u) >> 8u;
-	uint8_t Vy = (opcode & 0x00F0u) >> 4u;
 
 	// Put he MSB in VF
 	registers[0xF] = (registers[Vx] & 0x80u) >> 7u;
