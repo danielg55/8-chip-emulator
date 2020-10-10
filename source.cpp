@@ -42,6 +42,6 @@ int main(int argc, char **argv)
 
             platform.Update(chip8.video, videoPitch);
         }
-
-        return 0;
     }
+    return 0;
+}
